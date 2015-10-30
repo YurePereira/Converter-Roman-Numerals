@@ -4,7 +4,7 @@ class Thousand extends ConverterRomanNumerals {
 
 	private $hundred;
 
-	function __construct() {
+	public function __construct() {
 		$this->numberUnit = 1000;
 		$this->thousand = array(
 			'M',
@@ -43,5 +43,5 @@ class Thousand extends ConverterRomanNumerals {
 		}
 
 	}
-	
+
 }

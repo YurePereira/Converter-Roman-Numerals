@@ -4,7 +4,7 @@ class Hundred extends ConverterRomanNumerals {
 
 	private $hundred;
 
-	function __construct() {
+	public function __construct() {
 		$this->numberUnit = 100;
 		$this->hundred = array(
 			'C',
@@ -38,5 +38,5 @@ class Hundred extends ConverterRomanNumerals {
 			return $this->hundred[($number / $this->numberUnit) - 1] . $u->convert($number % $this->numberUnit);
 		}
 	}
-	
+
 }

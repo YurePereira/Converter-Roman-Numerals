@@ -4,7 +4,7 @@ class Dozen extends ConverterRomanNumerals {
 
 	private $dozen;
 
-	function __construct() {
+	public function __construct() {
 		$this->numberUnit = 10;
 		$this->dozen = array(
 			'X',
@@ -38,5 +38,5 @@ class Dozen extends ConverterRomanNumerals {
 			return $this->dozen[($number / $this->numberUnit) - 1] . $u->convert($number % $this->numberUnit);
 		}
 	}
-	
+
 }

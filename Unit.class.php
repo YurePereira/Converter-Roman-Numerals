@@ -4,7 +4,7 @@ class Unit extends ConverterRomanNumerals {
 
 	private $unit;
 
-	function __construct() {
+	public function __construct() {
 		$this->unit = array(
 			'Not exists in roman.',
 			'I',
@@ -33,5 +33,5 @@ class Unit extends ConverterRomanNumerals {
 	protected function toRoman($number) {
 		return $this->unit[$number];
 	}
-	
+
 }
